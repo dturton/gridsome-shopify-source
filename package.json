@@ -1,0 +1,41 @@
+{
+  "name": "gridsome-source-shopify",
+  "version": "0.0.1",
+  "description": "gridsome shopify plugin",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist ",
+    "watch": "npm run build -- --watch",
+    "start": "nodemon --exec babel-node src/run.js"
+  },
+  "keywords": [
+    "gridsome",
+    "shopify",
+    "gridsome-plugin",
+    "gridsome-source"
+  ],
+  "author": "David Turton <dturton@etrivo.com> (https://etrivo.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "nodemon": "^1.19.3"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/node": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "camelcase": "^5.3.1",
+    "core-js": "^3.2.1",
+    "graphql-request": "^1.8.2"
+  },
+  "peerDependencies": {
+    "gridsome": "0.x"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=8"
+  }
+}
